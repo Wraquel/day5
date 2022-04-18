@@ -1,16 +1,41 @@
-@import "https://unpkg.com/aos@next/dist/aos.css";
 body {
-  background-color: rgb(19, 20, 23);
+  height: 100vh;
   color: rgb(87, 208, 167);
   min-width: 500px;
+  font-family: "Poppins", sans-serif;
+  background-color: rgb(193, 193, 193);
 }
-.row {
-  margin: 10px;
+.header {
+  margin-left: 13%;
+}
+.header input {
+  border: none;
+  background-color: none;
+  border-bottom: 1px solid rgb(21, 32, 61);
+  background-color: rgb(193, 193, 193);
+}
+label {
+  color: rgb(21, 32, 61);
+  font-size: 20px;
+  margin-right: 10px;
 }
 h1 {
-  margin: 20px;
-  font-size: 28px;
-  color: rgb(78, 121, 251);
+  letter-spacing: 2px;
+  margin: 40px auto 40px;
+  font-size: 50px;
+  font-weight: bolder;
+  color: rgb(21, 32, 61);
+}
+.main {
+  display: flex;
+  margin-top: 10px;
+  align-items: center;
+  justify-content: center;
+}
+.section .row {
+  display: flex;
+  margin: 5px;
+  flex-wrap: nowrap;
 }
 #mostrarTitulo {
   margin-bottom: 20px;
@@ -18,56 +43,62 @@ h1 {
   text-align: center;
   color: rgb(253, 198, 45);
 }
-h3 {
+.row h3 {
+  letter-spacing: 1px;
   margin-right: 50px;
-}
-.header {
-  text-align: center;
 }
 h3 {
   font-size: 17px;
 }
-
-input {
+img {
+  margin-left: 90px;
+}
+.row input {
   padding: 5px;
   border-radius: 5px;
   border: none;
-  margin-bottom: 20px;
   background-color: rgb(193, 193, 193);
+  margin-bottom: 20px;
 }
 .btn {
   margin: 10px 15px;
   padding: 4px 10px;
   border-radius: 10px;
-  background: rgb(247, 93, 117);
+  background: rgb(136, 105, 185);
   border: 1px solid rgb(253, 198, 45);
   box-shadow: -2px 2px 0 0 rgb(253, 198, 45);
 }
-
+.start {
+  margin-left: 57px;
+}
 .start,
 .middle {
-  margin: 30px 10px;
+  background-color: rgb(21, 32, 61);
+  margin-bottom: 15px;
   text-align: center;
   padding: 10px 20px;
-  border: 1px solid whitesmoke;
-  border-radius: 30px;
+  border-radius: 15px;
+}
+.end .row {
+  flex-wrap: wrap;
+  justify-content: space-around;
 }
 .end {
-  border: 3px whitesmoke dashed;
+  background-color: rgb(21, 32, 61);
+  border-radius: 15px;
+  margin-left: 60px;
 }
 .end ul {
-  font-size: 27px;
+  font-size: 22px;
   font-family: "Grape Nuts", cursive;
   list-style: none;
-  text-align: left;
   padding: 5px;
-  color: rgb(240, 17, 17);
+  color: rgb(21, 32, 61);
   background: rgb(200, 197, 197);
 }
-
 .links-socialMidia {
   display: flex;
-  margin-top: 100px;
+  margin-top: 10px;
   justify-content: center;
 }
 .social-midia a {

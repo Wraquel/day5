@@ -10,85 +10,96 @@
       integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
       crossorigin="anonymous"
     />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Grape+Nuts&display=swap"
-      rel="stylesheet"
-    />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400&display=swap" rel="stylesheet">
     <script
       src="https://kit.fontawesome.com/43c43aef87.js"
       crossorigin="anonymous"
     ></script>
     <link rel="stylesheet" type="text/css" href="style.css" />
-    <title>Day5 #7daysofCode</title>
+    <title>Shopping List</title>
   </head>
   <body>
-    <div class="header">
+    <div class="header  text-start">
       <h1>Shopping List</h1>
-      <h3>Give a name to your list:</h3>
+      <label>Give a name to your list:</label>
       <input id="nomedaLista" type="text" /><button
         id="btn-one"
         class="btn"
-        onclick="getTitulo()"
-      >
-        +
-      </button>
+        onclick="getTitulo()">+</button>
     </div>
-    <div class="row">
-      <div class="col-lg-3 start">
-        <h3>Vegetables</h3>
-        <input id="legumesInput" type="text" />
-        <button id="btn" class="btn" onclick="addLegumes()">+</button>
-        <h3>Dry</h3>
-        <input id="secosInput" type="text" />
-        <button id="btn" class="btn" onclick="addSecos()">+</button>
-        <h3>Fruits</h3>
-        <input id="frutasInput" type="text" />
-        <button id="btn" class="btn" onclick="addFrutas()">+</button>
-      </div>
-      <div class="col-lg-3 middle">
-        <h3>Frozen Food</h3>
-        <input id="frozenInput" type="text" />
-        <button id="btn" class="btn" onclick="addLaticinios()">+</button>
-        <h3>Beverages</h3>
-        <input id="bebidasInput" type="text" />
-        <button id="btn" class="btn" onclick="addBebidas()">+</button>
-        <h3>Cleaners/Personal</h3>
-        <input id="higieneInput" type="text" />
-        <button id="btn" class="btn" onclick="addHigLimpeza()">+</button>
-      </div>
-      <div class="col-lg-5 end">
-        <div class="row">
+    <div class="main flex-container">
+     <div class="section">
+      <div class="row">
+
+        <div class="col-lg-6 start">
+
+          <h3>Vegetables</h3>
+          <input id="legumesInput" type="text" />
+          <button id="btn" class="btn" onclick="addLegumes()"><strong>+</strong></button>
+          <h3>Dry Food</h3>
+          <input id="secosInput" type="text" />
+          <button id="btn" class="btn" onclick="addSecos()"><strong>+</strong></button>
+          <h3>Fruits</h3>
+          <input id="frutasInput" type="text" />
+          <button id="btn" class="btn" onclick="addFrutas()"><strong>+</strong></button>
+        </div>
+        <div class="col-lg-6 middle">
+          <h3>Frozen Food</h3>
+          <input id="frozenInput" type="text" />
+          <button id="btn" class="btn" onclick="addLaticinios()"><strong>+</strong></button>
+          <h3>Beverages</h3>
+          <input id="bebidasInput" type="text" />
+          <button id="btn" class="btn" onclick="addBebidas()"><strong>+</strong></button>
+          <h3>Cleaners/Personal</h3>
+          <input id="higieneInput" type="text" />
+          <button id="btn" class="btn" onclick="addHigLimpeza()"><strong>+</strong></button>
+        </div>
+        </div>
+      
+      <div  class="col-12  end">
+
+        <div class="row ">
           <h3 id="mostrarTitulo"></h3>
-          <div class="col-4">
+          <div class="col-3">
             <h3>Vegetables</h3>
             <ul id="itemLegumes"></ul>
           </div>
-          <div class="col-4">
+          <div class="col-3">
             <h3>Dry</h3>
             <ul id="itemSecos"></ul>
           </div>
-          <div class="col-4">
+          <div class="col-3">
             <h3>Fruits</h3>
             <ul id="itemFrutas"></ul>
           </div>
         </div>
+       
         <div class="row">
-          <div class="col-4">
+          <div class="col-3">
             <h3>Frozen Food</h3>
             <ul id="itemFrozen"></ul>
           </div>
-          <div class="col-4">
+          <div class="col-3">
             <h3>Beverages</h3>
             <ul id="itemBebidas"></ul>
           </div>
-          <div class="col-4">
+          <div class="col-3">
             <h3>Cleaners/Personal</h3>
             <ul id="itemLimpezaHigiene"></ul>
           </div>
+
         </div>
         </div>
+        </div>
+
+        <div>
+          <img  width="450" src="./image.png">
+        </div>
+
+        </div>
+       
         <footer> 
           <div class="links-socialMidia">
           <div class="social-midia">
@@ -116,8 +127,6 @@
     </div>
     <script src="./index.js"></script>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-    <script>
-      AOS.init();
-    </script>
+   
   </body>
 </html>
